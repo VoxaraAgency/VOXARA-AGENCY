@@ -195,27 +195,85 @@ nav {
 .timeline-box ul { list-style: none; }
 .timeline-box li { font-size: 0.88rem; margin-bottom: 12px; line-height: 1.4; color: #333;}
 
-/* --- 5. PRODUCT CARDS --- */
-.product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-.product-card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.04); }
-.product-img-fallback { 
-    height: 220px; display: flex; align-items: center; justify-content: center;
-    transition: background 0.4s ease;
+/* --- 5. PRODUCT CARDS (UPDATED WITH IMAGE MOTION) --- */
+.product-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 35px; 
 }
-.bg-orange { background-color: #f7ede2; color: var(--warm-orange); }
-.product-card:hover .bg-orange { background-color: var(--warm-orange); }
-.bg-brown { background-color: #e6dfd5; color: var(--coffee-brown); }
-.product-card:hover .bg-brown { background-color: var(--coffee-brown); }
-.bg-beige-dark { background-color: #eae3d2; color: var(--coffee-brown); }
-.product-card:hover .bg-beige-dark { background-color: #d1c7b1; }
 
-.product-card:hover .product-img-fallback i { color: white !important; transform: scale(1.1); }
-.product-img-fallback i { transition: 0.4s ease; }
+.product-card { 
+    background: white; 
+    border-radius: 20px; 
+    overflow: hidden; 
+    box-shadow: 0 10px 30px rgba(74, 48, 24, 0.05); 
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+}
 
-.product-info { padding: 25px; text-align: left; }
-.product-info h3 { font-size: 1.35rem; color: var(--coffee-brown); font-weight: 700; }
-.price { font-size: 1.25rem; color: var(--warm-orange); font-weight: 800; margin: 8px 0; }
-.desc { font-size: 0.9rem; color: #666; }
+/* Wrapper Gambar untuk Efek Motion Zoom */
+.product-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+}
+
+.product-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Efek Lapisan Cahaya Hangat di Atas Gambar */
+.img-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(to bottom, rgba(217, 119, 54, 0), rgba(74, 48, 24, 0.2));
+    opacity: 0.7;
+    transition: opacity 0.4s ease;
+}
+
+/* HOVER EFFECT: Kartu Terangkat & Gambar Membesar */
+.product-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(74, 48, 24, 0.12);
+}
+
+.product-card:hover .product-img-wrapper img {
+    transform: scale(1.08); /* Efek zoom smooth */
+}
+
+.product-card:hover .img-overlay {
+    opacity: 0.4; /* Cahaya melembut saat di-hover */
+}
+
+/* Detail Info Produk */
+.product-info { 
+    padding: 30px 25px; 
+    text-align: left; 
+}
+
+.product-info h3 { 
+    font-size: 1.4rem; 
+    color: var(--coffee-brown); 
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.price { 
+    font-size: 1.35rem; 
+    color: var(--warm-orange); 
+    font-weight: 800; 
+    margin-bottom: 12px; 
+    letter-spacing: 0.5px;
+}
+
+.desc { 
+    font-size: 0.92rem; 
+    color: #616161; 
+    line-height: 1.6;
+}
 
 /* --- 6. CONTACT AND FOOTER --- */
 .contact-wrap { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
