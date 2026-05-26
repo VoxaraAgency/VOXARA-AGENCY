@@ -4,17 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VOXARA x Kopi Dingdong | Campaign Website</title>
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Lora:ital@0;1&display=swap" rel="stylesheet">
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- AOS Animation CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- NAVIGASI TAB UTAMA -->
+    <!-- NAVIGASI -->
     <nav data-aos="fade-down" data-aos-duration="1000">
         <div class="logo">VOX<span>ARA.</span></div>
         <ul class="nav-links">
@@ -27,7 +24,7 @@
         </ul>
     </nav>
 
-    <!-- 1. HOME SECTION -->
+    <!-- 1. HOME -->
     <header id="home" class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
@@ -42,12 +39,17 @@
         </div>
     </header>
 
-    <!-- 2. ABOUT KOPI DINGDONG SECTION -->
+    <!-- 2. ABOUT KOPI DINGDONG -->
     <section id="about" class="section bg-cream">
         <div class="container">
             <h2 class="section-title text-center" data-aos="fade-down">About Kopi Dingdong</h2>
-            <div class="about-grid">
-                <div class="about-text" data-aos="fade-right" data-aos-duration="1000">
+            <div class="about-grid mt-4">
+                
+                <div class="about-image-wrapper" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Suasana Kopi Dingdong" class="img-fit shadow-cinematic">
+                </div>
+
+                <div class="about-text" data-aos="fade-left" data-aos-duration="1000">
                     <p><strong>Kopi Dingdong</strong> adalah sebuah coffee shop yang terletak di kawasan Graha Raya, Tangerang, tepatnya di Jl. Boulevard Graha Raya. Tempat ini populer sebagai destinasi nongkrong modern bagi berbagai kalangan, mulai dari pelajar dan anak muda hingga pekerja.</p>
                     <p>Dengan suasana yang nyaman, modern, dan estetik, Kopi Dingdong menjadi lokasi yang ideal untuk belajar, bekerja, maupun berkumpul.</p>
                     
@@ -58,11 +60,13 @@
 
                     <div class="mt-4">
                         <h3><i class="fa-brands fa-instagram text-orange"></i> Aktivitas & Media Sosial</h3>
-                        <p>Kopi Dingdong aktif dalam mengadakan promo kreatif, mendukung acara komunitas lokal, serta membuat konten interaktif untuk menjalin hubungan dengan pelanggan. <br><strong>Instagram: @kopidingdong</strong></p>
+                        <p>Kopi Dingdong aktif dalam mengadakan promo kreatif, mendukung acara komunitas lokal, serta membuat konten interaktif untuk menjalin hubungan dengan pelanggan. <strong>IG: @kopidingdong</strong></p>
                     </div>
                 </div>
-                
-                <div class="milestone" data-aos="fade-left" data-aos-duration="1000">
+            </div>
+            
+            <div class="about-bottom-grid mt-5">
+                <div class="milestone" data-aos="fade-up">
                     <h3>Perjalanan (Milestone)</h3>
                     <ul class="timeline">
                         <li><strong>2022:</strong> Kopi Dingdong resmi berdiri dan membuka kedai pertamanya di kawasan Graha Raya, Tangerang.</li>
@@ -70,138 +74,102 @@
                         <li><strong>2024:</strong> Menghadirkan berbagai menu favorit pelanggan, termasuk menu andalan mereka, Iced Butterscotch.</li>
                     </ul>
                 </div>
-            </div>
-
-            <!-- Brand Values -->
-            <h3 class="text-center mt-5 mb-4" data-aos="fade-up">Nilai-Nilai Brand (Brand Values)</h3>
-            <div class="values-grid">
-                <div class="value-card" data-aos="flip-left" data-aos-delay="100"><h4>Kebersamaan</h4><p>Menjadi wadah untuk membangun hubungan dan berbagi cerita di tengah gaya hidup individualis.</p></div>
-                <div class="value-card" data-aos="flip-left" data-aos-delay="200"><h4>Interaktif</h4><p>Mendorong interaksi sosial langsung antar pelanggan melalui berbagai aktivitas seru.</p></div>
-                <div class="value-card" data-aos="flip-left" data-aos-delay="300"><h4>Nostalgia</h4><p>Mengusung konsep yang membawa pelanggan pada kenangan hangat dan sederhana.</p></div>
-                <div class="value-card" data-aos="flip-left" data-aos-delay="400"><h4>Kreatif & Inovatif</h4><p>Terus menghadirkan ide, menu, dan kampanye baru agar tetap relevan dengan tren anak muda.</p></div>
-                <div class="value-card" data-aos="flip-left" data-aos-delay="500"><h4>Nyaman & Friendly</h4><p>Menciptakan suasana santai dan ramah bagi setiap pengunjung.</p></div>
-                <div class="value-card" data-aos="flip-left" data-aos-delay="600"><h4>Peduli Komunitas</h4><p>Mendukung komunitas kreatif lokal dan kampanye sosial yang berdampak positif.</p></div>
+                
+                <div class="values-section" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="mb-4">Nilai-Nilai Brand (Brand Values)</h3>
+                    <div class="values-grid">
+                        <div class="value-card"><h4>Kebersamaan</h4><p>Wadah membangun hubungan di tengah gaya hidup individualis.</p></div>
+                        <div class="value-card"><h4>Interaktif</h4><p>Mendorong interaksi sosial langsung melalui aktivitas seru.</p></div>
+                        <div class="value-card"><h4>Nostalgia</h4><p>Mengusung konsep kenangan hangat dan sederhana.</p></div>
+                        <div class="value-card"><h4>Kreatif & Inovatif</h4><p>Selalu relevan dengan tren anak muda.</p></div>
+                        <div class="value-card"><h4>Nyaman & Friendly</h4><p>Suasana santai dan ramah bagi setiap pengunjung.</p></div>
+                        <div class="value-card"><h4>Peduli Komunitas</h4><p>Mendukung komunitas lokal dan kampanye sosial.</p></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- 3. SOCIAL ISSUES SECTION -->
+    <!-- 3. SOCIAL ISSUES -->
     <section id="issues" class="section bg-softblack text-white">
         <div class="container text-center">
             <h2 class="capslock-title" data-aos="zoom-in" data-aos-duration="1200">KENAPA CAMPAIGN INI DIBUAT?</h2>
             
-            <!-- Infografis Statis -->
-            <div class="stat-container mb-5" data-aos="fade-up">
-                <div class="stat-item">
-                    <span class="stat-number">85%</span>
-                    <p class="stat-label">Anak muda terlalu fokus pada layar handphone mereka saat berkumpul.</p>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number"><i class="fa-solid fa-people-arrows"></i></span>
-                    <p class="stat-label">Suasana nongkrong berubah menjadi individualis di meja yang sama.</p>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">-60%</span>
-                    <p class="stat-label">Interaksi sosial secara tatap muka langsung mulai berkurang drastis.</p>
-                </div>
-            </div>
-            
-            <!-- Ilustrasi Dinamis Kopi Shop Sibuk HP -->
-            <div class="illustration-box motion-float" data-aos="fade-up" data-aos-delay="300">
-                <div class="cafe-table">
-                    <div class="person left">
-                        <i class="fa-solid fa-user-ninja person-icon"></i>
-                        <div class="phone-glow"><i class="fa-solid fa-mobile-screen-button"></i></div>
+            <div class="issue-content mt-5">
+                <div class="issue-text" data-aos="fade-right">
+                    <div class="stat-box">
+                        <i class="fa-solid fa-mobile-screen fa-3x text-orange mb-3"></i>
+                        <p class="stat-label">Anak muda masa kini terlalu fokus pada HP.</p>
                     </div>
-                    <div class="coffee-cup-center"></div>
-                    <div class="person right">
-                        <i class="fa-solid fa-user-astronaut person-icon"></i>
-                        <div class="phone-glow"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                    <div class="stat-box mt-4">
+                        <i class="fa-solid fa-user-xmark fa-3x text-orange mb-3"></i>
+                        <p class="stat-label">Nongkrong menjadi individualis, masing-masing asyik di dunianya sendiri.</p>
+                    </div>
+                    <div class="stat-box mt-4">
+                        <i class="fa-solid fa-comments-dollar fa-3x text-orange mb-3"></i>
+                        <p class="stat-label">Interaksi langsung dan obrolan tatap muka mulai berkurang drastis.</p>
                     </div>
                 </div>
-                <p class="illustration-caption"><i class="fa-solid fa-ban"></i> Ilustrasi: Meja yang sama, namun terisolasi di dunia maya masing-masing.</p>
+                
+                <div class="issue-image" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Ilustrasi individualis di cafe" class="img-fit shadow-cinematic motion-hover">
+                    <p class="caption mt-3"><i class="fa-solid fa-circle-exclamation text-orange"></i> Satu meja, namun tak saling sapa.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- 4. AKTIVITAS CAMPAIGN SECTION -->
+    <!-- 4. AKTIVITAS CAMPAIGN -->
     <section id="campaign" class="section bg-beige">
         <div class="container">
             <h2 class="section-title text-center mb-5" data-aos="fade-down">Aktivitas Campaign</h2>
             
             <!-- A. Online Campaign -->
-            <div class="campaign-part" data-aos="fade-right" data-aos-duration="1000">
+            <div class="campaign-part" data-aos="fade-up">
                 <h3 class="part-title">A. Online Campaign</h3>
-                <p class="mb-4">Menggemakan gerakan perubahan dengan tagar utama <span class="text-orange font-weight-bold">#NgopiBarengDingDong</span> melalui konten Reels IG, TikTok Challenge, UGC (User Generated Content) Challenge, serta berkolaborasi aktif dengan Influencer Mahasiswa.</p>
+                <p class="mb-4">Mengkampanyekan <span class="text-orange font-weight-bold">#NgopiBarengDingDong</span> melalui interaksi digital: Reels IG, TikTok Challenge, UGC Challenge, dan kolaborasi bersama Influencer Mahasiswa.</p>
                 
                 <div class="media-grid">
-                    <!-- Mockup Instagram -->
                     <div class="mockup-instagram motion-hover">
-                        <div class="mockup-header">
-                            <i class="fa-brands fa-instagram"></i> <span>kopidingdong</span>
-                        </div>
-                        <div class="mockup-body">
-                            <i class="fa-solid fa-clapperboard fa-3x text-orange"></i>
-                            <p class="tag-hashtag">#NgopiBarengDingDong</p>
-                        </div>
-                        <div class="mockup-footer">
-                            <p><strong>Reels & TikTok Challenge</strong></p>
-                        </div>
+                        <div class="mockup-header"><i class="fa-brands fa-instagram"></i> <span>kopidingdong</span></div>
+                        <div class="mockup-body"><i class="fa-solid fa-hashtag fa-3x text-orange"></i><p class="tag-hashtag">#NgopiBarengDingDong</p></div>
+                        <div class="mockup-footer"><p><strong>UGC & TikTok Challenge</strong></p></div>
                     </div>
-
-                    <!-- Carousel Content -->
                     <div class="mockup-carousel motion-hover">
-                        <div class="carousel-slide">
-                            <span class="slide-num">1/3</span>
-                            <h4>"Nongkrong tapi Sepi?"</h4>
-                            <p>Swipe untuk melihat realita sosial kita saat ini.</p>
-                            <div class="swipe-indicator"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
+                        <span class="slide-num">1/3</span>
+                        <h4>Nongkrong Sepi?</h4>
+                        <p>Swipe untuk melihat realita</p>
+                        <i class="fa-solid fa-arrow-right swipe-indicator"></i>
                     </div>
-
-                    <!-- Video Teaser Mockup -->
                     <div class="mockup-video motion-hover">
-                        <div class="play-overlay">
-                            <i class="fa-solid fa-circle-play fa-4x text-orange"></i>
-                        </div>
-                        <p class="video-title">Official Video Teaser Campaign</p>
+                        <i class="fa-solid fa-circle-play fa-4x text-orange"></i>
+                        <p class="video-title">Video Teaser Campaign</p>
                     </div>
                 </div>
             </div>
 
             <!-- B. Offline Event -->
-            <div class="campaign-part mt-5" data-aos="fade-left" data-aos-duration="1000">
+            <div class="campaign-part mt-5" data-aos="fade-up">
                 <h3 class="part-title">B. Offline Event: "No Phone Coffee"</h3>
-                <p class="mb-4">Kampanye tatap muka nyata di mana <strong>Pengunjung meletakkan HP mereka</strong> dalam box khusus saat memasuki area kedai, ditukar dengan kesempatan menikmati keseruan bermain Board Game (Uno, Monopoly, Kartu) demi membangun kembali interaksi yang hangat.</p>
+                <p class="mb-4"><strong>Pengunjung wajib menaruh HP</strong> mereka di kotak khusus. Selama nongkrong, mereka akan menikmati aktivitas seru seperti <strong>Main Board Game Uno, Monopoly, dan Kartu</strong>.</p>
                 
                 <div class="media-grid">
-                    <!-- Ilustrasi Poster Event -->
+                    <div class="event-image-box motion-hover">
+                        <img src="https://images.unsplash.com/photo-1610890716171-6b1bb98ffaed?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Bermain Kartu Uno" class="img-fit">
+                        <div class="overlay-text">Board Game Session</div>
+                    </div>
                     <div class="poster-event motion-hover">
                         <div class="poster-badge">OFFLINE EVENT</div>
                         <h3>NO PHONE<br>COFFEE</h3>
-                        <p class="poster-desc">Put down your phone, look up, and start talking.</p>
-                        <div class="game-icons">
-                            <i class="fa-solid fa-dice"></i> <i class="fa-solid fa-layer-group"></i>
-                        </div>
+                        <div class="game-icons"><i class="fa-solid fa-dice"></i> <i class="fa-solid fa-mobile-screen-button"></i></div>
                     </div>
-
-                    <!-- Ilustrasi Foto Event Realistis -->
-                    <div class="photo-event-mockup motion-hover">
-                        <div class="box-phone-illustration">
-                            <i class="fa-solid fa-box-archive fa-3x"></i>
-                            <p>HP Storage Box</p>
-                        </div>
-                        <p class="photo-caption">Visualisasi: Meja interaktif tanpa gawai</p>
-                    </div>
-
-                    <!-- Timeline Acara -->
                     <div class="timeline-box">
                         <h4>Timeline Acara</h4>
                         <ul>
-                            <li><strong>15:00 - 15:30</strong> <br>Drop Phone & Welcome Drink (Iced Butterscotch)</li>
-                            <li><strong>15:30 - 18:00</strong> <br>Board Game Session (Uno, Monopoly, Kartu)</li>
-                            <li><strong>18:30 - 20:30</strong> <br>Live Acoustic Session & Chit-Chat</li>
-                            <li><strong>20:30 - Selesai</strong> <br>Pengambilan HP & Sesi Foto Bersama</li>
+                            <li><strong>15:00</strong> - Registrasi & Drop HP</li>
+                            <li><strong>16:00</strong> - Board Game (Uno, Monopoly)</li>
+                            <li><strong>19:00</strong> - Live Acoustic & Chit Chat</li>
+                            <li><strong>21:00</strong> - Pengambilan HP</li>
                         </ul>
                     </div>
                 </div>
@@ -209,75 +177,71 @@
         </div>
     </section>
 
-   <!-- 5. PRODUCT SECTION -->
+    <!-- 5. PRODUCT SECTION -->
     <section id="product" class="section bg-cream">
         <div class="container text-center">
             <h2 class="section-title" data-aos="fade-down">Menu Kopi Dingdong Graha Raya</h2>
             <div class="product-grid mt-5">
                 
-                <!-- Product 1: Iced Butterscotch -->
                 <div class="product-card" data-aos="zoom-in" data-aos-delay="100">
                     <div class="product-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Iced Butterscotch Kopi Dingdong">
+                        <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Iced Butterscotch" class="img-fit">
                         <div class="img-overlay"></div>
                     </div>
                     <div class="product-info">
                         <h3>Iced Butterscotch</h3>
                         <p class="price">Rp 28.000</p>
-                        <p class="desc">Menu signature paling disukai. Perpaduan sirup butterscotch yang gurih-manis, susu creamy, dan espresso lembut.</p>
+                        <p class="desc">Menu signature yang memadukan mentega (butterscotch) creamy dengan kopi manis, lembut, dan unik.</p>
                     </div>
                 </div>
 
-                <!-- Product 2: Signature Americano -->
                 <div class="product-card" data-aos="zoom-in" data-aos-delay="300">
                     <div class="product-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Signature Americano Kopi Dingdong">
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Americano" class="img-fit">
                         <div class="img-overlay"></div>
                     </div>
                     <div class="product-info">
-                        <h3>Signature Americano</h3>
+                        <h3>Americano</h3>
                         <p class="price">Rp 20.000</p>
-                        <p class="desc">Ekstraksi ganda biji kopi pilihan (Arabika & Robusta) yang menghasilkan rasa bersih, tegas, dan menyegarkan.</p>
+                        <p class="desc">Ekstraksi biji kopi pilihan untuk hasil yang tegas dan menyegarkan hari Anda.</p>
                     </div>
                 </div>
 
-                <!-- Product 3: Creamy Cafe Latte -->
                 <div class="product-card" data-aos="zoom-in" data-aos-delay="500">
                     <div class="product-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Creamy Cafe Latte Kopi Dingdong">
+                        <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Cafe Latte" class="img-fit">
                         <div class="img-overlay"></div>
                     </div>
                     <div class="product-info">
-                        <h3>Creamy Cafe Latte</h3>
+                        <h3>Cafe Latte</h3>
                         <p class="price">Rp 25.000</p>
-                        <p class="desc">Kombinasi espresso pekat khas Kopi Dingdong dengan kelembutan susu murni bertekstur halus (steam milk).</p>
+                        <p class="desc">Kombinasi espresso pekat dengan kelembutan susu bertekstur yang menenangkan.</p>
                     </div>
                 </div>
 
             </div>
         </div>
     </section>
+
     <!-- 6. CONTACT SECTION -->
     <section id="contact" class="section bg-softblack text-white">
         <div class="container text-center" data-aos="fade-up">
-            <h2 class="section-title text-orange">Contact & Collaboration</h2>
+            <h2 class="section-title text-orange">Get in Touch</h2>
             
             <div class="contact-wrap mt-5">
-                <!-- Kontak Kopi Dingdong -->
-                <div class="contact-card motion-hover" data-aos="fade-right" data-aos-delay="200">
+                <div class="contact-card motion-hover">
                     <h3><i class="fa-solid fa-location-dot text-orange"></i> Kopi Dingdong</h3>
                     <p class="address">Pasar Modern Graha Raya, Jl. KH. Mas Mansyur, Pinang, Tangerang, Banten</p>
-                    <div class="contact-detail mt-3">
-                        <p><i class="fa-brands fa-whatsapp text-orange"></i> 081574736377</p>
+                    <div class="contact-detail">
+                        <p><i class="fa-solid fa-phone text-orange"></i> 081574736377</p>
                         <p><i class="fa-brands fa-instagram text-orange"></i> @kopidingdong</p>
                     </div>
                 </div>
 
-                <!-- Kontak VOXARA Agency -->
-                <div class="contact-card border-orange motion-hover" data-aos="fade-left" data-aos-delay="400">
+                <div class="contact-card border-orange motion-hover">
                     <h3><i class="fa-solid fa-bullseye text-orange"></i> VOXARA Agency</h3>
-                    <p class="address">Creative Campaign & Media Branding Partner.</p>
-                    <div class="contact-detail mt-3">
+                    <p class="address">Partner kampanye kreatif Anda. Mari berkolaborasi membangun cerita brand.</p>
+                    <div class="contact-detail">
                         <p><i class="fa-solid fa-envelope text-orange"></i> contact@voxara.agency</p>
                         <p><i class="fa-brands fa-instagram text-orange"></i> @voxara.agency</p>
                     </div>
@@ -290,14 +254,9 @@
         <p style="font-size: 0.9rem; color: #888;">&copy; 2026 VOXARA AGENCY x Kopi Dingdong. All Rights Reserved.</p>
     </footer>
 
-    <!-- AOS Animation JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({ 
-            once: true,
-            offset: 100,
-            easing: 'ease-in-out-sine'
-        });
+        AOS.init({ once: true, offset: 100, easing: 'ease-in-out-sine' });
     </script>
 </body>
 </html>
